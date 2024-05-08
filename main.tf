@@ -1,17 +1,3 @@
-/*resource "aws_vpc" "auto_vpc" {
-  cidr_block = "10.0.0.0/16"
-  tags = {
-    Name = "mediawiki"
-  }
-}
-resource "aws_subnet" "auto_subnet" {
-  vpc_id     = aws_vpc.auto_vpc.id
-  cidr_block = "10.0.1.0/24"
-
-  tags = {
-    Name = "mediawiki"
-  }
-}*/
 /*
 resource "aws_security_group" "allow-ssh" {
   #vpc_id      = aws_vpc.mediawiki_vpc.id
