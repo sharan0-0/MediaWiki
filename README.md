@@ -49,11 +49,11 @@ terraform plan
 
 terraform apply -auto-approve
 
+```
 
 :exclamation: NOTE
 
-- Kindly remember "./keys/all_present_keys" directory has been removed so you might face challenges while executing on remote instances. 
+- Kindly remember "./keys/all_present_keys" directory has been removed so you might face challenges while executing on remote instances.
 - Kindly ignore extra/unwanted files
 - Terraform config is done in "*.tf" files
 
-```
