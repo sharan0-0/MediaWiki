@@ -1,4 +1,3 @@
-/*
 resource "aws_security_group" "allow-ssh" {
   #vpc_id      = aws_vpc.mediawiki_vpc.id
   name        = "demo-allow-ssh"
@@ -20,7 +19,7 @@ resource "aws_security_group" "allow-ssh" {
     protocol    = "TCP"
     cidr_blocks = ["0.0.0.0/0"]
   }
-}*/
+}
 
 resource "aws_vpc" "mediawiki_vpc" {
   cidr_block = "10.0.0.0/16"  # Update the CIDR block as needed
