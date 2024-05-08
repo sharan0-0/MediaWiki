@@ -1,0 +1,5 @@
+- name: Playbook for Releasing App on MediaWiki Servers
+  hosts: localhost
+  become: true
+  roles:
+    - ../../roles/yum

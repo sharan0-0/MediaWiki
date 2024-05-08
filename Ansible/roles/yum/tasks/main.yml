@@ -1,0 +1,4 @@
+---
+# tasks file for yum repo setup
+- name: Prerequisite installations
+  script: scripts.sh
