@@ -69,7 +69,7 @@ resource "aws_instance" "auto_instance" {
   ami                     = "ami-013e83f579886baeb"
   instance_type           = "t2.micro"
   subnet_id = aws_subnet.mediawiki_subnet.id
-  #vpc_security_group_ids = [aws_security_group.allow-ssh.name]
+  vpc_security_group_ids = [aws_security_group.allow-ssh.name]
   associate_public_ip_address = true
   key_name = "keypair_for_burger"
   tags = {
@@ -82,7 +82,7 @@ resource "aws_instance" "bastion" {
   ami                     = "ami-013e83f579886baeb"
   instance_type           = "t2.micro"
   subnet_id = aws_subnet.mediawiki_subnet.id
-  #vpc_security_group_ids = [aws_security_group.allow-ssh.name]
+  vpc_security_group_ids = [aws_security_group.allow-ssh.name]
   associate_public_ip_address = true
   key_name = "keypair_for_burger"
   tags = {
